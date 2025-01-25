@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #23fbff62
+}
+
+.start_page.winner {
+    font-family: "Caveat", serif;
+    font-size: 200px;
+    color: black;
+}
+
+h1 {
+    font-family: "Caveat", serif;
+    font-size: 100px;
+    color: red;
+    font-weight: bold;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.start_page,
+.game_page {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.start_page {
+    background-color: #2ce52fce;
+    color: white;
+}
+
+.game_page {
+    background-color: #2196f3;
+    color: white;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.game_page.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.start_button,
+.reset_button {
+    background-color: rgb(255, 204, 0);
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    margin-top: 35px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: bold;
+}
+
+.start_button:hover,
+.reset_button:hover {
+    background-color: #ffffff;
+    color: #4caf50;
+}
+
+.game_container {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 30px;
+}
+
+.cell {
+    min-width: 110px;
+    min-height: 110px;
+    background-color: rgb(21, 196, 235);
+    border: 2px solid #2156f3;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cell:hover {
+    background-color: #bbdefb;
+}
