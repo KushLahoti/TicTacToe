@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     startbutton.addEventListener('click', () => {
         startpage.style.display = "none";
         gamepage.classList.add("active");
-        resetGmae();
+        resetGame();
     });
 
     resetbutton.addEventListener('click', () => {
@@ -81,6 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
             ele.style.color = "black";
             ele.style.fontFamily = "'Caveat', serif"
             ele.style.fontSize = "16vh";
+            ele.style.marginTop = "30px"
             gamepage.insertBefore(ele, gamepage.firstChild);
             setTimeout(() => {
                 resetGame();
