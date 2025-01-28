@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     ele.innerHTML = "Player " + ((pos1val == "X") ? "1" : "2") + " Wins!";
                     ele.style.color = "black";
                     ele.style.fontFamily = "'Caveat', serif"
-                    ele.style.fontSize = "150px";
+                    ele.style.fontSize = "16vh";
                     gamepage.insertBefore(ele, gamepage.firstChild);
                 }
             }
@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
             ele.innerHTML = "No Player Wins!";
             ele.style.color = "black";
             ele.style.fontFamily = "'Caveat', serif"
-            ele.style.fontSize = "150px";
+            ele.style.fontSize = "16vh";
             gamepage.insertBefore(ele, gamepage.firstChild);
             setTimeout(() => {
                 resetGame();
